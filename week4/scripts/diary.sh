@@ -1,4 +1,4 @@
 #!/bin/bash
 read diaryEntry 
-
-echo "$diaryEntry" >> "$HOME/diary.txt"
+timestamp=$(date +%T)
+echo "$timestamp $diaryEntry" >> "$HOME/diary.txt"
